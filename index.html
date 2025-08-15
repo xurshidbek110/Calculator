@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+    <input type="text" id="display" placeholder="0" readonly>
+
+    <button onclick="appendToDisplay()" class="gray">(</button>
+    <button onclick="appendToDisplay()" class="gray">)</button>
+    <button onclick="clearDisplay()" class="orange">AC</button>
+    <button onclick="del()" class="orange">DEL</button>
+    <button onclick="appendToDisplay('/')" class="orange">/</button>
+    <button onclick="appendToDisplay('%')" class="orange">%</button>
+
+    <button onclick="appendToDisplay('**2')" class="gray">^2</button>
+    <button onclick="appendToDisplay('**3')" class="gray">^3</button>
+    <button onclick="appendToDisplay('7')" class="gray2">7</button>
+    <button onclick="appendToDisplay('8')" class="gray2">8</button>
+    <button onclick="appendToDisplay('9')" class="gray2">9</button>
+    <button onclick="appendToDisplay('*')" class="orange">*</button>
+
+    <button onclick="appendToDisplay1()" class="gray">√</button>
+    <button onclick="appendToDisplay2()" class="gray">∛</button>
+    <button onclick="appendToDisplay('4')" class="gray2">4</button>
+    <button onclick="appendToDisplay('5')" class="gray2">5</button>
+    <button onclick="appendToDisplay('6')" class="gray2">6</button>
+    <button onclick="appendToDisplay('-')" class="orange">-</button>
+
+    <button onclick="factorial()" class="gray">!</button>
+    <button onclick="sin()" class="gray">sin(</button>
+    <button onclick="appendToDisplay('1')" class="gray2">1</button>
+    <button onclick="appendToDisplay('2')" class="gray2">2</button>
+    <button onclick="appendToDisplay('3')" class="gray2">3</button>
+    <button onclick="appendToDisplay('+')" class="orange">+</button>
+
+    <button onclick="cos()" class="gray">cos(</button>
+    <button onclick="tan()" class="gray">tan(</button>
+    <button onclick="appendToDisplay('0')" class="gray1">0</button>
+    <button onclick="appendToDisplay('.')" class="gray2">.</button>
+    <button onclick="calculate()" class="red">=</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
